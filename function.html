@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+ </head>
+ <body>
+  <input type="text"  id="name" name="name">
+   <button onclick="great()">
+    greet
+   </button>
+ <div class="greet">
+
+ </div>
+</body>
+  <script>
+   function great(){
+    var name = document.getElementById("name").value;
+    var string ='hello'+name;
+   document.getElementById("butto_").innerHTML=string;
+   }
+
+  </script>
+
+</html>

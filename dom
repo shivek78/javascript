@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+ </head>
+ <body>
+ <p>
+  here we learn the dom functionality in javascript</p>
+  <p>dom is the document object model</p>
+
+  <p>its is used for the the write some things on the body of the web page</p>
+  <p>
+ <h1>syntax</h1>
+
+ <p>they are three type of dom</p>
+ <br>
+  <p>document.grtElementbyid("");</p>
+  <p>document.grtElementbyclass("");</p>
+  <p>.innerhtml("")</p>
+
+
+ 
+  <div id="by_id">
+  hello world
+
+  </div>
+  <script>
+ var x=document.getElementById("by_id");
+console.log(x);
+  </script>
+ </body>
+</html>
