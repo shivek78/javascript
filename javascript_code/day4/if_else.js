@@ -1,3 +1,6 @@
+
+
+
 // Check if a number is odd or even in JavaScript
 let num=20;
 if(num%2==0)
@@ -24,16 +27,4 @@ if(num1<num2){
 else{
       console.log("num1 is greater")
 }
-
-//sort three numbers using if else
-let sort=20;
-let sort1=40;
-let sort2=60;
- if(sort>sort1){
-      if{}
-
- }
- else{
-      console.log( sort1)
- }
 
