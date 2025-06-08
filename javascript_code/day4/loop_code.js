@@ -12,11 +12,16 @@ console.log("hello , we are learning loops in javascript")
  }
 
 //-------------------------------------------------------------------
-for (let i = 0; i <= 100; i++) {
+for (let i = 0; i <= 10; i++) {
  console.log(i);
 }
 ///------------------------------------------------------------
 for(let shivek=0;shivek<=10;shivek++){
     console.log("shivek is a great person");
+}
+ 
+let n = 5;
+for (let i = 0; i <= 100; i++) {
+  console.log(`${n} x ${i} = ${n * i}`);
 }
 
