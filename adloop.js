@@ -11,7 +11,8 @@ Even Numbers:
 Write a program that uses a for loop to print all even numbers from 2 to 20 (inclusive).
 Sum of Numbers:
 
-Write a program that uses a for loop to calculate and print the sum of numbers from 1 to 50 (inclusive).
+Write a program that uses a for loop to calculate and print the sum of numbers from 1 to 50 (inclusive)
+.
 Multiplication Table:
 
 Ask the user to enter a number. Then, use a for loop to print its multiplication table from 1 to 10.
@@ -67,7 +68,7 @@ while (num <= 10) {
       console.log(num)
       num++
 }
-*/
+
 console.log("---------------------------------")
 console.log("Even Numbers:=>")
 console.log("Write a program that uses a for loop to print all even numbers from 2 to 20 (inclusive).Sum of Numbers")
@@ -85,3 +86,14 @@ for (even = 2; even <= 20; even++) {
 }
 console.log("------------------------------------------")
 console.log("Sum of Even Numbers from 2 to 20:", sum);
+*/
+console.log("-------------*******************--------------------")
+console.log("Sum of Numbers:")
+console.log("Write a program that uses a for loop to calculate and print the sum of numbers from 1 to 50 (inclusive)")
+
+let sum1=0;
+for (i= 1; i <= 50; i++) {
+          sum1+=i;
+}
+console.log("------------------------------------------")
+console.log("Sum of  Numbers from 1to 50:", sum1);
