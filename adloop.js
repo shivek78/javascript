@@ -24,6 +24,7 @@ Example: If the user enters 5, output should be:
 Countdown:
 
 Write a program that uses a for loop to print a countdown from 10 to 1, and then print "Blast Off!".
+
 Intermediate Level:
 
 Factorial:
@@ -86,7 +87,7 @@ for (even = 2; even <= 20; even++) {
 }
 console.log("------------------------------------------")
 console.log("Sum of Even Numbers from 2 to 20:", sum);
-*/
+
 console.log("-------------*******************--------------------")
 console.log("Sum of Numbers:")
 console.log("Write a program that uses a for loop to calculate and print the sum of numbers from 1 to 50 (inclusive)")
@@ -97,3 +98,42 @@ for (i= 1; i <= 50; i++) {
 }
 console.log("------------------------------------------")
 console.log("Sum of  Numbers from 1to 50:", sum1);
+
+
+
+
+console.log("-------------*******************--------------------")
+
+console.log("Countdown::")
+console.log("Write a program that uses a for loop to print a countdown from 10 to 1, and then print Blast Off")
+for(let count=10;count>=1;count--){
+      
+      console.log(count)
+}
+console.log("Blast off")
+
+*/
+// Factorial:
+
+// Use the 'readline' module to get user input from the console
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+console.log("---------------------------------");
+console.log("Factorial:=>");
+console.log("Ask the user to enter a non-negative integer. Use a for loop to calculate and print its factorial. (The factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less or equal to n. For example, 5!=5×4×3×2×1=120. 0!=1).");
+console.log("------------------------------------------");
+
+rl.question("Please enter a non-negative integer: ", (input) => {
+    const num = parseInt(input);
+
+    // Validate if the input is a non-negative integer
+    if (isNaN(num) || num < 0 || !Number.isInteger(num)) {
+        console.log("Invalid input. Please enter a non-negative integer.");
+        rl.close();
+        return; // Exit the function
+    }
