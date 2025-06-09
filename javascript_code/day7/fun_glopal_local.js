@@ -1,0 +1,1 @@
+//global variabl in javascripts 
