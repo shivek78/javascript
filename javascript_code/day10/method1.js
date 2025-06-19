@@ -24,3 +24,7 @@ let arr = [
 
 let sorted = arr.sort((a, b) => a.localeCompare(b)); 
 console.log(sorted);
+
+let arr1=[1,2,3,4,5,6,7,8,9]
+const  arranged= arr1.sort((a,b)=>b-a)
+console.log(arranged)
