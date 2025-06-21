@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 
 <html>
-      <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>dom properties</title>
-            <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="">
-      </head>
-      <body>
-         
-            
-            <script src="" async defer></script>
-      </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>dom properties</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        background-color: azure;
+        color: red;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: larger;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">hello we are learing the dom properties in dom</h1>
+    <div class="secondheading">hi i am  the div and i  accessed by the class name </div>
+<h2 id="h2_"> hi i acess by the id </h2>
+<p> hi i am the paragraph and i acess by  the tag </p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto laboriosam non soluta reiciendis eius optio sapiente, nihil saepe placeat veniam ea ullam temporibus totam quasi nam asperiores iure omnis sit!
+</p>
+
+<script>
+/* 
+  Common methods for accessing (selecting) HTML elements using JavaScript DOM:
+
+  1. By Tag Name:
+     - Uses: Selects all elements of a given tag (e.g., all <p> or <div>).
+     - Method: document.getElementsByTagName('tagName')
+
+  2. By ID:
+     - Uses: Selects a single element with a specific ID.
+     - Method: document.getElementById('elementID')
+
+  3. By Class Name:
+     - Uses: Selects all elements with a specific class.
+     - Method: document.getElementsByClassName('className')
+
+  4. By Query Selector:
+     - Uses: Selects the first element that matches a CSS-style selector.
+     - Method: document.querySelector('selector')
+     - Example: document.querySelector('.myClass') or document.querySelector('#myId')
+
+  5. By Query Selector All:
+     - Uses: Selects all elements that match a CSS-style selector.
+     - Method: document.querySelectorAll('selector')
+     - Example: document.querySelectorAll('p') or document.querySelectorAll('.box')
+
+  Notes:
+  - getElementById returns a single element.
+  - All others (except querySelector) return HTMLCollections 
+*/
+
+
+
+// 1️⃣ Accessing by Tag Name:
+// Selects all <p> elements on the page.
+// Returns an HTMLCollection (live, array-like, needs conversion for array methods).
+let element1 = document.getElementsByTagName('p');
+console.log(element1);
+
+// 2️⃣ Accessing by ID:
+// Selects the element with ID 'h2_'.
+// Returns the single element directly (not a collection).
+let element2 = document.getElementById('h2_');
+console.log(element2);
+
+// 3️⃣ Accessing by Class Name:
+// Selects all elements with class 'secondheading'.
+// Also returns a live HTMLCollection.
+let element3 = document.getElementsByClassName('secondheading');
+console.log(element3);
+
+// 4️⃣ Accessing with querySelector:
+// Selects the *first* <h1> element that matches the selector.
+// Returns a single element (the first match).
+let element = document.querySelector('h1');
+console.log(element);
+
+// 5️⃣ Accessing with querySelectorAll:
+// Selects *all* <p> elements on the page.
+// Returns a static NodeList (can use forEach directly).
+let element4 = document.querySelectorAll('p');
+console.log(element4);
+
+/*
+  🔍 Common DOM Element Properties:
+  
+  - innerText: Gets/sets the visible text of the element.
+  - innerHTML: Gets/sets the HTML content inside the element.
+  - textContent: Gets/sets all text inside the element, including hidden elements.
+  - id: Accesses or updates the ID attribute.
+  - className: Accesses or updates the element's classes as a single string.
+  - classList: Provides methods like add(), remove(), toggle() for individual classes.
+  - style: Used to read or update inline styles (e.g., element.style.color).
+  - tagName: Returns the tag name (e.g., 'DIV', 'H1').
+  - children: Returns child elements (excluding text nodes).
+  - parentElement: Refers to the element’s parent in the DOM tree.
+*/
+//let acsse the element 
+let title=document.querySelector('h1')
+//updateing value
+console.log(title.innerHTML='shivek yadav this is modified text');
+console.log(title.innerText);
+console.log(title.textContent);
+console.log(title.style.color='green');
+title.style.fontSize='36px'
+console.log(title.tagName);
+console.log(title.className);
+</script>
+  </body>
 </html>
