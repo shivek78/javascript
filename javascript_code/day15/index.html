@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        color: greenyellow;
+        font-size: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 ">dom manipulation method</h1>
+    <div class="contanier"></div>
+
+   
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsa
+      aliquam beatae nam ex, odio, dignissimos earum dolorum culpa adipisci
+      nesciunt nostrum, repellendus doloribus? Porro eligendi eum quam sed
+      doloremque.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsa
+      aliquam beatae ex, odio, dignissimos earum dolorum culpa adipisci nesciunt
+      nostrum, repellendus doloribus? Porro eligendi eum quam sed doloremque.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ipsa
+      aliquam beatae nam ex, odio, dignissimos earum dolorum culpa adipisci
+      nesciunt nostrum, repellendus doloribus? Porro eligendi eum quam sed
+      doloremque.
+    </p>
+
+    <script>
+      //creating 
+      let dom2 = document.createElement("div");
+
+      dom2.innerHTML =
+        "this is the new div crate by js  and dom manipulation techniques";
+      dom2.setAttribute("class", "test");
+      console.log(dom2);
+      console.log(dom2, dom2.getAttribute("class"))
+
+
+      /*
+  📌 DOM Insertion Methods — Controlling Element Position:
+
+  parent.append(child)
+  - Adds the child element to the end of the parent’s content.
+
+  parent.prepend(child)
+  - Adds the child element to the beginning (top) of the parent’s content.
+
+  element.before(sibling)
+  - Inserts the sibling element just *before* the reference element.
+
+  element.after(sibling)
+  - Inserts the sibling element just *after* the reference element.
+
+  parent.insertBefore(newNode, existingNode)
+  - (Legacy method) Inserts newNode *before* an existing child in the parent.
+*/
+
+// 💡 Example:
+
+let ss=document.createElement('h1')
+ss.innerHTML="shivek& Sam"
+
+let contanier= document.querySelector('.contanier')
+//contanier.append(h2)
+//contanier.prepend(h2)
+contanier.before(h1)
+
+
+    </script>
+  </body>
+</html>
